@@ -51,14 +51,9 @@ def load_config():
     except FileNotFoundError:
         return {"upload_to_drive_enabled": False}
 
-def load_credentials():
-    """Load API credentials from file."""
-    try:
-        with open(CREDENTIALS_FILE, 'r') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        st.error("❌ Credentials file not found!")
-        return {}
+
+# No longer needed: load_credentials(). Use st.secrets instead.
+
 
 def initialize_session_state():
     """Initialize Streamlit session state variables."""
@@ -71,13 +66,15 @@ def initialize_session_state():
     if 'initial_download_done' not in st.session_state:
         st.session_state.initial_download_done = False
 
-    # Load credentials and config
-    credentials = load_credentials()
-    config = load_config()
+    # Load credentials and config from st.secrets
+    st.session_state.api_key = st.secrets.get('GEMINI_API_KEY', '')
+    st.session_state.llm_model = st.secrets.get('LLM_MODEL', 'gemini-2.0-flash-lite')
+    # For upload_to_drive_enabled, support both bool and string
+    upload_to_drive_enabled = st.secrets.get('UPLOAD_TO_DRIVE_ENABLED', False)
+    if isinstance(upload_to_drive_enabled, str):
+        upload_to_drive_enabled = upload_to_drive_enabled.lower() == 'true'
+    st.session_state.upload_to_drive_enabled = upload_to_drive_enabled
 
-    st.session_state.api_key = credentials.get('gemini_api_key', '')
-    st.session_state.llm_model = credentials.get('llm_model', 'gemini-2.0-flash-lite')
-    st.session_state.upload_to_drive_enabled = config.get('upload_to_drive_enabled', False)
 
 #-----------------------------------------
 # Google Drive Integration
