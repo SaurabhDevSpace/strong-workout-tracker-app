@@ -266,7 +266,7 @@ def header_section():
     """Display app header."""
     st.markdown("""
     <div style='text-align: center; padding: 20px;'>
-        <h1>🏋🏻‍♂️ Strong App - Workout Tracker</h1>
+        <h1>🏋🏻‍♂️ Strong - The Workout Tracker</h1>
         <p style='font-size: 18px; color: #666;'>Tracks Gym workouts and Cardio sessions</p>
     </div>
     """, unsafe_allow_html=True)
@@ -1116,7 +1116,7 @@ def main():
 
     # Set page config FIRST, before any other Streamlit commands
     st.set_page_config(
-        page_title="Strong App - Workout Tracker",
+        page_title="Strong - Workout Tracker App",
         page_icon="🏋️",
         layout="wide",
         initial_sidebar_state="expanded"
