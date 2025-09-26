@@ -1,0 +1,44 @@
+date,workout_types,gym_time_minutes,cardio_time_minutes,cardio_calories,cardio_distance,notes,id
+2025-07-29,"triceps,shoulder",50,27,105,2.5 km,,15b46621-65c3-409c-afcf-63ed86357d15
+2025-07-30,"chest,triceps",51,16,111,2.58 km,,bf9cd644-0b03-4285-9f87-8b6dc8f0e94f
+2025-07-31,"triceps,shoulder",67,12,87,0.66 km,Regular training day. triceps and shoulder exercises went well.,9b2c1ca6-34a5-4550-88bf-962024e7b397
+2025-08-02,"legs,chest",75,29,150,1.45 km,Good workout targeting legs and chest. Increased weight on a few exercises.,d042f54e-9a1d-4a11-b3dc-924325d31908
+2025-08-04,"abs,back",59,30,118,4.52 km,Focused session on abs and back. Good form throughout.,e61cbf00-f1c6-490f-aad3-8bc1dbc1b62d
+2025-08-05,"biceps,abs",71,26,150,1.85 km,Productive workout. biceps and abs routine completed successfully.,769c66ff-73ef-432f-9bb1-cf8c00ffa9af
+2025-08-06,"shoulder,biceps",49,11,55,0.72 km,Intense session today. Really pushed myself on shoulder and biceps.,4a1d7725-3977-4640-8d0f-0ee81ee24593
+2025-08-07,"abs,back",54,30,150,4.54 km,Intense session today. Really pushed myself on abs and back.,ac8be6af-31cb-43ab-98f3-62b9cae472c2
+2025-08-08,"triceps,back",71,24,107,2.9 km,Good workout targeting triceps and back. Increased weight on a few exercises.,74f72616-b3f5-45a5-a6f1-c9dda44de7fa
+2025-08-11,"shoulder,abs",52,11,59,0.67 km,,a2da5d20-7cb4-4858-b21d-27bb832b251a
+2025-08-12,"shoulder,triceps",58,21,110,1.45 km,Quick but effective 58 min workout. shoulder and triceps covered.,7ee58242-abbe-4388-9063-92fbacf25293
+2025-08-13,"back,chest",54,20,128,1.42 km,Regular training day. back and chest exercises went well.,9149a76a-1dfe-4b30-a02d-e67d34768c94
+2025-08-14,"biceps,chest",73,26,91,1.85 km,,536fbee0-9f08-4ec7-a1d3-8a018985848e
+2025-08-19,"chest,back",64,22,67,1.5 km,Productive workout. chest and back routine completed successfully.,c1256ea1-b0e5-455b-a504-c0b83319a4f7
+2025-08-20,"back,chest",74,16,97,1.41 km,Focused session on back and chest. Good form throughout.,0d09fc66-4493-4747-b6c6-1524cb08d4fe
+2025-08-21,"shoulder,triceps",55,27,150,1.7 km,Great session! Focused on shoulder and triceps. Felt strong today.,11bb1da2-5b91-4675-9fa0-7b69f2c5fa59
+2025-08-22,"biceps,legs",57,30,136,1.9 km,Great session! Focused on biceps and legs. Felt strong today.,4fd57d8a-8f09-48d1-bca2-022fe9473291
+2025-08-25,"chest,abs",73,24,150,1.18 km,Intense session today. Really pushed myself on chest and abs.,d084bb98-5d7c-4f06-96a7-fdaf85390ff6
+2025-08-26,"triceps,shoulder",75,22,150,1.26 km,Good workout targeting triceps and shoulder. Increased weight on a few exercises.,18e541cd-118e-440b-8016-b73596d651f2
+2025-08-27,"legs,back",50,14,66,0.99 km,Productive workout. legs and back routine completed successfully.,cd82b7ca-4d49-433d-9ca6-4aea590e45f4
+2025-08-28,"chest,abs",54,10,62,0.51 km,,8d779f94-1348-40c9-be1c-fa3da64dc5ae
+2025-08-29,"abs,triceps",74,29,150,3.97 km,Focused session on abs and triceps. Good form throughout.,84d70f3f-8675-4f0b-8e90-a7ca43e90366
+2025-09-01,"biceps,triceps",64,21,77,1.18 km,Quick but effective 64 min workout. biceps and triceps covered.,d2ae11d4-10f9-4401-b51b-a44dad8a878e
+2025-09-03,"chest,biceps",72,11,61,1.62 km,Productive workout. chest and biceps routine completed successfully.,1ab5130e-51b9-4f84-9843-dbd67b662b62
+2025-09-04,"abs,back",67,24,150,1.4 km,Productive workout. abs and back routine completed successfully.,2b424076-a3c2-4d25-8413-0271061f8286
+2025-09-05,"legs,biceps",68,18,118,1.41 km,Great session! Focused on legs and biceps. Felt strong today.,092d74dd-63b4-4b05-8d5e-848067533585
+2025-09-08,"shoulder,legs",49,23,148,1.94 km,Regular training day. shoulder and legs exercises went well.,8b2098a3-b358-4abb-854f-1b02b5d3dad5
+2025-09-09,"chest,shoulder",70,15,91,1.06 km,,bd9778fb-5ea6-4e2e-a555-807e81bd199a
+2025-09-10,"triceps,chest",65,18,76,1.0 km,Solid 65 min session. triceps and chest felt challenging but good.,22759a57-7dc8-449a-be01-1b9218381619
+2025-09-11,"shoulder,biceps",75,29,150,2.39 km,Regular training day. shoulder and biceps exercises went well.,a92719f5-fbb2-4d6a-a047-1d2659a040af
+2025-09-12,"biceps,chest",73,12,85,0.98 km,Great session! Focused on biceps and chest. Felt strong today.,77ce1165-3ef4-4f04-b440-fe5d96e1f290
+2025-09-13,"back,legs",74,26,150,2.21 km,Solid 74 min session. back and legs felt challenging but good.,b790eeb8-75ad-499d-b2e5-bd91066db90e
+2025-09-15,"shoulder,biceps",49,29,150,4.26 km,Great session! Focused on shoulder and biceps. Felt strong today.,b02e506b-f196-4bfa-b811-82aec7ebac48
+2025-09-16,"triceps,chest",72,24,79,1.39 km,,39062888-6367-4eb0-8823-2420a8106e0c
+2025-09-17,"abs,shoulder",60,29,150,1.69 km,Focused session on abs and shoulder. Good form throughout.,a97cfd46-3e88-4b7e-8c55-4d616f17f780
+2025-09-18,"triceps,abs",69,18,116,1.35 km,Productive workout. triceps and abs routine completed successfully.,8f856597-b18d-4628-b553-ac9740eb9ee0
+2025-09-19,"triceps,legs",58,22,114,3.03 km,Regular training day. triceps and legs exercises went well.,e585bf1c-1e43-4189-9ef3-092075a652e1
+2025-09-20,"abs,back",52,20,150,1.02 km,Intense session today. Really pushed myself on abs and back.,dcb70264-e64c-469d-b437-6c483c29a2fb
+2025-09-22,"biceps,shoulder",45,16,91,1.17 km,Intense session today. Really pushed myself on biceps and shoulder.,1fd71bd6-ef44-48f1-9c77-d693732f132d
+2025-09-23,"triceps,back",48,30,150,1.38 km,Productive workout. triceps and back routine completed successfully.,ef395f45-9b72-448b-a1b2-bfaf0589a0b2
+2025-09-24,"triceps,biceps",51,23,150,3.35 km,Regular training day. triceps and biceps exercises went well.,c90dc34b-3c5a-4bdb-b644-77abce0db85b
+2025-09-25,"triceps,shoulder",74,19,66,1.81 km,Good workout targeting triceps and shoulder. Increased weight on a few exercises.,c2dc04da-4fe5-4ab1-bbba-8275148f9c1a
+2025-09-26,"biceps,shoulder",52,15,103,0.89 km,Productive workout. biceps and shoulder routine completed successfully.,a981557d-0522-46cb-8224-8585bbb34408

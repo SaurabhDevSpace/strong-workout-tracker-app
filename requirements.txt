@@ -1,2 +1,9 @@
 streamlit
 pandas
+pytz
+langchain
+langchain-google-genai
+google-auth-oauthlib
+google-api-python-client
+pillow
+langgraph
