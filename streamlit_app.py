@@ -266,7 +266,7 @@ def header_section():
     """Display app header."""
     st.markdown("""
     <div style='text-align: center; padding: 20px;'>
-        <h1>🏋🏻‍♂️ Strong - The Workout Tracker</h1>
+        <h1>🏋🏻‍♂️ StrongSB - The Workout Tracker</h1>
         <p style='font-size: 18px; color: #666;'>Tracks Gym workouts and Cardio sessions</p>
     </div>
     """, unsafe_allow_html=True)
