@@ -110,19 +110,20 @@ def upload_to_drive():
 
         media = MediaIoBaseUpload(csv_buffer, mimetype='text/csv')
 
-        # Check if file exists
-        results = service.files().list(q=f"name='{WORKOUT_DATA_FILE}'").execute()
+        # Search for file by name and mimeType to avoid duplicates
+        query = f"name='{WORKOUT_DATA_FILE}' and mimeType='text/csv' and trashed=false"
+        results = service.files().list(q=query, spaces='drive', fields='files(id, name)').execute()
         files = results.get('files', [])
 
         if files:
-            # Update existing file
+            # Update existing file (use files().update with correct media_body)
             file_id = files[0]['id']
             service.files().update(fileId=file_id, media_body=media).execute()
             logger.info("Workout data updated on Google Drive")
         else:
             # Create new file
-            file_metadata = {'name': WORKOUT_DATA_FILE}
-            service.files().create(body=file_metadata, media_body=media).execute()
+            file_metadata = {'name': WORKOUT_DATA_FILE, 'mimeType': 'text/csv'}
+            service.files().create(body=file_metadata, media_body=media, fields='id').execute()
             logger.info("Workout data uploaded to Google Drive")
 
     except Exception as e:
@@ -135,7 +136,9 @@ def download_from_drive():
         if not service:
             return
 
-        results = service.files().list(q=f"name='{WORKOUT_DATA_FILE}'").execute()
+        # Search for file by name and mimeType
+        query = f"name='{WORKOUT_DATA_FILE}' and mimeType='text/csv' and trashed=false"
+        results = service.files().list(q=query, spaces='drive', fields='files(id, name)').execute()
         files = results.get('files', [])
 
         if files:
@@ -150,9 +153,12 @@ def download_from_drive():
                 _, done = downloader.next_chunk()
 
             csv_buffer.seek(0)
-            df = pd.read_csv(csv_buffer)
-            st.session_state.workout_data = df
-            logger.info("Workout data downloaded from Google Drive")
+            try:
+                df = pd.read_csv(csv_buffer)
+                st.session_state.workout_data = df
+                logger.info("Workout data downloaded from Google Drive")
+            except Exception as e:
+                logger.error(f"Error reading CSV from Google Drive: {str(e)}")
         else:
             logger.info("No workout data file found on Google Drive")
 
